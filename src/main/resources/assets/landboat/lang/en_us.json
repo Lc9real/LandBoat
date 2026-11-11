@@ -1,0 +1,15 @@
+{
+  "itemGroup.landboat": "Example Mod Tab",
+  "block.landboat.example_block": "Example Block",
+  "item.landboat.example_item": "Example Item",
+
+  "landboat.configuration.title": "Land Boat Configs",
+  "landboat.configuration.section.landboat.common.toml": "Land Boat Configs",
+  "landboat.configuration.section.landboat.common.toml.title": "Land Boat Configs",
+  "landboat.configuration.items": "Item List",
+  "landboat.configuration.logDirtBlock": "Log Dirt Block",
+  "landboat.configuration.magicNumberIntroduction": "Magic Number Text",
+  "landboat.configuration.magicNumber": "Magic Number",
+
+  "enchantment.landboat.land": "Land"
+}
