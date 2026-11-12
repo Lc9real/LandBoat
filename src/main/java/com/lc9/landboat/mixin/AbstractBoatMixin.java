@@ -1,15 +1,19 @@
 package com.lc9.landboat.mixin;
 
 import com.lc9.landboat.ModAttachments;
+import com.llamalad7.mixinextras.injector.ModifyReturnValue;
 import net.minecraft.world.entity.vehicle.boat.AbstractBoat;
 import org.objectweb.asm.Opcodes;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.injection.At;
+import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.Redirect;
+import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 @Mixin(AbstractBoat.class)
-public abstract class AbstractBoatMixin {
+public abstract class AbstractBoatMixin
+{
 
     @Shadow
     private float landFriction;
@@ -23,8 +27,10 @@ public abstract class AbstractBoatMixin {
                     ordinal = 0
             )
     )
-    private float landboat$modifyLandFriction(AbstractBoat boat) {
-        if (boat.getData(ModAttachments.HAS_LAND.get())) {
+    private float landboat$modifyLandFriction(AbstractBoat boat)
+    {
+        if (boat.getData(ModAttachments.HAS_LAND.get()))
+        {
             return 0.9F;
         }
 
