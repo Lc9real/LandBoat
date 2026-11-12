@@ -1,0 +1,33 @@
+# LandBoat License
+
+Copyright (c) 2026 lc9
+
+## 1. Permissions
+
+Permission is hereby granted to any person to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of this software, including for commercial purposes.
+
+You may distribute modified versions of the software in source or compiled form. You are not required to publish your modifications or make their source code publicly available.
+
+## 2. Attribution Requirement
+
+If you redistribute this software, either in its original or modified form, you must give credit to the original author, **lc9**, in a clearly visible location in the public description or listing of the redistributed mod.
+
+The attribution must identify the original author. A link to the original project is not required.
+
+## 3. Copyright and Notices
+
+You must retain the original copyright notice and this license text in copies or substantial portions of the software.
+
+This license does not grant permission to use the original author's name to endorse or promote modified versions without permission.
+
+## 4. Disclaimer of Warranty
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NONINFRINGEMENT.
+
+THE AUTHOR IS NOT RESPONSIBLE FOR DAMAGES, DATA LOSS, OR OTHER CLAIMS ARISING FROM THE USE OR INABILITY TO USE THE SOFTWARE, TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW.
+
+## 5. Limitation of Liability
+
+To the maximum extent permitted by applicable law, the author shall not be liable for any damages or claims arising from the use, distribution, modification, or inability to use the software.
+
+Nothing in this license excludes liability that cannot legally be excluded or limited.
