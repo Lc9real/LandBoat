@@ -29,7 +29,7 @@ public abstract class AbstractBoatMixin
     )
     private float landboat$modifyLandFriction(AbstractBoat boat)
     {
-        if (boat.getData(ModAttachments.HAS_LAND.get()))
+        if (boat.getData(ModAttachments.HAS_LAND.get()) && this.landFriction < 0.9f)
         {
             return 0.9F;
         }
