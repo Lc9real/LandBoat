@@ -2,6 +2,7 @@ package com.lc9.landboat.mixin;
 
 import com.lc9.landboat.ModAttachments;
 import com.lc9.landboat.enchantment.ModEnchantments;
+import com.llamalad7.mixinextras.injector.ModifyReturnValue;
 import net.minecraft.core.Holder;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.server.level.ServerLevel;
@@ -13,7 +14,9 @@ import net.minecraft.world.item.enchantment.Enchantment;
 import net.minecraft.world.phys.Vec3;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
+import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.ModifyVariable;
+import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 @Mixin(Entity.class)
 public abstract class EntityMixin {
@@ -46,5 +49,16 @@ public abstract class EntityMixin {
         stack.enchant(enchantment, 1);
 
         return stack;
+    }
+
+    @Inject(method="maxUpStep", at = @At("HEAD"), cancellable = true)
+    public void landboat$changeMaxUpStep(CallbackInfoReturnable<Float> cir)
+    {
+        Entity entity = (Entity) (Object) this;
+
+        if (entity instanceof AbstractBoat boat && boat.getData(ModAttachments.HAS_LAND.get()))
+        {
+            cir.setReturnValue(1.0f);
+        }
     }
 }
