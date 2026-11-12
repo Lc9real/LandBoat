@@ -1,25 +1,28 @@
+# Land Boat
 
-Installation information
-=======
+A small NeoForge mod that adds an enchantment called Land allowing boats to move just as fast on land as they do on water.
 
-This template repository can be directly cloned to get you started with a new
-mod. Simply create a new repository cloned from this one, by following the
-instructions provided by [GitHub](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template).
+Because apparently boats aren't supposed to be limited to water.
 
-Once you have your clone, simply open the repository in the IDE of your choice. The usual recommendation for an IDE is either IntelliJ IDEA or Eclipse.
+## Features
+- Adds an enchantment called Land for boats.
+- Boats maintain their normal water speed on land.
+- That's pretty much it.
+- The enchantment can be found in
+  - Ocean Ruins
+  - Shipwreck
+  - Buried Treasure
+  - Enchantment Table
 
-If at any point you are missing libraries in your IDE, or you've run into problems you can
-run `gradlew --refresh-dependencies` to refresh the local cache. `gradlew clean` to reset everything 
-{this does not affect your code} and then start the process again.
+## Requirements
+- Minecraft: `26.3`
+- NeoForge: `26.3.0.101`
 
-Mapping Names:
-============
-By default, the MDK is configured to use the official mapping names from Mojang for methods and fields 
-in the Minecraft codebase. These names are covered by a specific license. All modders should be aware of this
-license. For the latest license text, refer to the mapping file itself, or the reference copy here:
-https://github.com/NeoForged/NeoForm/blob/main/Mojang.md
+## Installation
+1. Install NeoForge.
+2. Download the mod `.jar` file.
+3. Put it in your `mods` folder.
+4. Launch the game.
 
-Additional Resources: 
-==========
-Community Documentation: https://docs.neoforged.net/  
-NeoForged Discord: https://discord.neoforged.net/
+## License
+See [LICENSE](LICENSE.txt).
