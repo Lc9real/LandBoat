@@ -2,8 +2,6 @@
 package com.lc9.landboat.loot;
 
 import com.lc9.landboat.LandBoat;
-import net.minecraft.core.registries.Registries;
-import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.common.loot.IGlobalLootModifier;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.neoforged.neoforge.registries.NeoForgeRegistries;
